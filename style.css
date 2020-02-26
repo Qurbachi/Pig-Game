@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 .clearfix::after {
@@ -80,7 +80,7 @@ body {
     color: #EB4D4D;
     top: -7px;
     right: 10px;
-    
+
 }
 
 .player-current-box {
@@ -141,7 +141,7 @@ i {
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
 
-.dice {
+[class^="dice-"] {
     position: absolute;
     left: 50%;
     top: 178px;
@@ -150,5 +150,47 @@ i {
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
+.dice-1 {
+  top: 110px;
+}
+
+.dice-2 {
+  top: 230px;
+}
+
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  margin-top: 7px;
+}
+
+.form__result {
+  color: white;
+  outline: none;
+  font-size: 18px;
+  font-family: 'Lato';
+  text-align: center;
+  padding: 5px;
+  margin-top: 0.8rem;
+  background-color: #EB4D4D;
+  text-transform: uppercase;
+}
+
+.form__result::-webkit-input-placeholder {
+  text-align: center;
+  font-size: inherit;
+  color: white;
+}
+
+.form__result::-webkit-input-placeholder:focus {
+  color: white;
+}
